@@ -87,19 +87,39 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       alacritty
+      atuin
       authy
+      bandwhich
+      bat
+      bottom
       brave
+      delta
+      dua
+      exa
+      fd
       firefox
       fish
       git
+      lfs
+      meld
       neovim
       nerdfonts
       nushell
+      pipr
+      procs
+      rm-improved
+      ripgrep
       rustup
+      sd
+      starship
       tmux
       vscode
+      zellij
+      zoxide
     ];
   };
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
