@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      <home-manager/nixos>
     ];
 
   # Bootloader.
@@ -86,38 +87,44 @@
     description = "Godsmith";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      alacritty
-      atuin
-      authy
-      bandwhich
-      bat
-      bottom
-      brave
-      delta
-      dua
-      exa
-      fd
-      firefox
-      fish
-      git
-      lfs
-      meld
-      neovim
-      nerdfonts
-      nushell
-      pipr
-      procs
-      rm-improved
-      ripgrep
-      rustup
-      sd
-      starship
-      tmux
-      vscode
-      zellij
-      zoxide
+      #alacritty
+      #atuin
+      #authy
+      #bandwhich
+      #bat
+      #bottom
+      #brave
+      #delta
+      #dua
+      #exa
+      #fd
+      #firefox
+      #fish
+      #git
+      #lfs
+      #meld
+      #neovim
+      #nerdfonts
+      #nushell
+      #pipr
+      #procs
+      #rm-improved
+      #ripgrep
+      #rustup
+      #sd
+      #starship
+      #tmux
+      #vscode
+      #zellij
+      #zoxide
     ];
   };
+
+  home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    users.godsmith = import ./home.nix;
+  };	
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
