@@ -86,8 +86,7 @@
     isNormalUser = true;
     description = "Godsmith";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    ];
+    shell = pkgs.fish;
   };
 
   home-manager = {
@@ -103,6 +102,7 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+  environment.shells = with pkgs; [ fish ];
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
