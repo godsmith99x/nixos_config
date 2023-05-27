@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./apps/fish.nix
+  ];
+
   home.username = "godsmith";
   home.homeDirectory = "/home/godsmith";
   home.stateVersion = "22.11";
@@ -17,7 +21,6 @@
     exa
     fd
     firefox
-    fish
     git
     lfs
     meld
