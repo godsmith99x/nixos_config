@@ -12,6 +12,7 @@
       update = "sudo nix-channel --update && sudo nixos-rebuild switch";
       bw = "sudo bandwhich";
       bg = "batgrep";
+      bm = "batman";
     };
   };
 }

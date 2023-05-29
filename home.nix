@@ -14,6 +14,7 @@
     authy
     bandwhich
     bat
+    bat-extras.batman
     bat-extras.batgrep
     bottom
     brave
