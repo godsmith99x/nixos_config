@@ -13,25 +13,23 @@
   home.stateVersion = "22.11";
   home.packages = with pkgs; [
     authy
-    bandwhich
-    bat-extras.batdiff
-    bat-extras.batgrep
-    bat-extras.batman
-    bottom
+    bandwhich # network usage
+    bat-extras.batdiff # git diff
+    bat-extras.batgrep # file search
+    bat-extras.batman # manual
+    bottom # system monitor
     brave
-    delta
-    dua
-    exa
-    fd
+    delta # terminal diff'ing tool
+    dua # disk usage
+    exa # ls replacement
+    fd # find replacement
     firefox
     git
-    lfs
-    meld
+    meld # graphical diff'ing tool
     neovim
     nerdfonts
-    nushell
-    pipr
-    procs
+    pipr # command builder
+    procs # process viewer
     rm-improved
     ripgrep
     rustup

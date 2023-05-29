@@ -7,13 +7,15 @@
       fish_add_path -p ~/.local/bin/
       zoxide init fish | source";
     shellAliases = {
-      ll = "exa -alF";
-      nv = "nvim";
-      update = "sudo nix-channel --update && sudo nixos-rebuild switch";
-      bw = "sudo bandwhich";
       bg = "batgrep";
       bm = "batman";
       bd = "batdiff";
+      cmd = "pipr";
+      disk = "dua i";
+      ll = "exa -alF";
+      net = "sudo bandwhich";
+      nv = "nvim";
+      update = "sudo nix-channel --update && sudo nixos-rebuild switch";
     };
   };
 }
