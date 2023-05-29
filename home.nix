@@ -14,6 +14,7 @@
     authy
     bandwhich
     bat
+    bat-extras.batgrep
     bottom
     brave
     delta
