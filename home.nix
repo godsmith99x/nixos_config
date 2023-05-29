@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./apps/alacritty.nix
     ./apps/fish.nix
   ];
 
@@ -9,7 +10,6 @@
   home.homeDirectory = "/home/godsmith";
   home.stateVersion = "22.11";
   home.packages = with pkgs; [
-    alacritty
     atuin
     authy
     bandwhich
