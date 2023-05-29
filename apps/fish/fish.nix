@@ -13,6 +13,7 @@
       bw = "sudo bandwhich";
       bg = "batgrep";
       bm = "batman";
+      bd = "batdiff";
     };
   };
 }

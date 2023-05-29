@@ -14,8 +14,9 @@
     authy
     bandwhich
     bat
-    bat-extras.batman
+    bat-extras.batdiff
     bat-extras.batgrep
+    bat-extras.batman
     bottom
     brave
     delta
