@@ -2,8 +2,8 @@
 
 {
   imports = [
-    ./apps/alacritty.nix
-    ./apps/fish.nix
+    ./apps/alacritty/alacritty.nix
+    ./apps/fish/fish.nix
   ];
 
   home.username = "godsmith";
