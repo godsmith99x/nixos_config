@@ -4,6 +4,7 @@
   imports = [
     ./apps/alacritty/alacritty.nix
     ./apps/atuin/atuin.nix
+    ./apps/bat/bat.nix
     ./apps/fish/fish.nix
   ];
 
@@ -13,7 +14,6 @@
   home.packages = with pkgs; [
     authy
     bandwhich
-    bat
     bat-extras.batdiff
     bat-extras.batgrep
     bat-extras.batman
