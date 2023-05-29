@@ -10,6 +10,7 @@
       ll = "exa -alF";
       nv = "nvim";
       update = "sudo nix-channel --update && sudo nixos-rebuild switch";
+      bw = "sudo bandwhich";
     };
   };
 }
