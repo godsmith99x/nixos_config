@@ -30,11 +30,11 @@
     nerdfonts
     pipr # command builder
     procs # process viewer
-    rm-improved
+    rm-improved # rm replacement
     ripgrep
     rustup
-    sd
-    starship
+    sd # find and replace
+    starship # prompt
     tmux
     vscode
     zellij
