@@ -3,6 +3,7 @@
 {
   imports = [
     ./apps/alacritty/alacritty.nix
+    ./apps/atuin/atuin.nix
     ./apps/fish/fish.nix
   ];
 
@@ -10,7 +11,6 @@
   home.homeDirectory = "/home/godsmith";
   home.stateVersion = "22.11";
   home.packages = with pkgs; [
-    atuin
     authy
     bandwhich
     bat
