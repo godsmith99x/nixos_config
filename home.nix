@@ -3,9 +3,10 @@
 {
   imports = [
     ./apps/alacritty/alacritty.nix
-    ./apps/atuin/atuin.nix
+    ./apps/atuin/atuin.nix # history search
     ./apps/bat/bat.nix
     ./apps/fish/fish.nix
+    ./apps/starship/starship.nix # prompt
   ];
 
   home.username = "godsmith";
@@ -34,7 +35,6 @@
     ripgrep
     rustup
     sd # find and replace
-    starship # prompt
     tmux
     vscode
     zellij
