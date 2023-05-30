@@ -5,6 +5,7 @@
       fish_vi_key_bindings
       fish_add_path -p ~/.cargo/bin/
       fish_add_path -p ~/.local/bin/
+      set -U fish_greeting
       zoxide init fish | source
       starship init fish | source";
     shellAliases = {
