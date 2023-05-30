@@ -7,6 +7,7 @@
     ./apps/bat/bat.nix
     ./apps/fish/fish.nix
     ./apps/starship/starship.nix # prompt
+    ./apps/tmux/tmux.nix
   ];
 
   home.username = "godsmith";
@@ -35,7 +36,6 @@
     ripgrep
     rustup
     sd # find and replace
-    tmux
     vscode
     zellij
     zoxide
