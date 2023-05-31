@@ -13,6 +13,16 @@
                     lines = 300;
                 };
             };
+            shell = {
+                program = "/etc/profiles/per-user/godsmith/bin/tmux";
+                args = [
+                    "new-session"
+                    "-A"
+                    "-D"
+                    "-s"
+                    "main"
+                ];
+            };
             font = {
                 normal = {
                     family = "VictorMono Nerd Font";
@@ -32,6 +42,6 @@
                 };
                 size = 14;
             };
-            };
         };
+    };
 }
