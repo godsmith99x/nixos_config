@@ -38,7 +38,6 @@
     rustup
     sd # find and replace
     vscode
-    zellij
     zoxide
   ];
 }
