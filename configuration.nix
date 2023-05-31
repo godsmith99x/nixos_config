@@ -108,6 +108,28 @@
   #  wget
   ];
 
+  # Podman configuration
+  virtualisation = {
+    podman = {
+      enable = true;
+
+      # TODO: Enable in 23.05
+      # autoPrune = {
+      #   enable = true;
+      #   flags = [ "all" ];
+      # };
+
+      # Create a `docker` alias for podman, to use it as a drop-in replacement
+      dockerCompat = true;
+
+      # So docker tools can talk to podman
+      dockerSocket.enable = true;
+
+      # Required for containers under podman-compose to be able to talk to each other.
+      defaultNetwork.dnsname.enable = true;
+    };
+  };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;

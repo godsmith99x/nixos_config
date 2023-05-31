@@ -31,6 +31,7 @@
     neovim
     nerdfonts
     pipr # command builder
+    podman-compose
     procs # process viewer
     rm-improved # rm replacement
     ripgrep
