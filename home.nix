@@ -14,6 +14,8 @@
   home.homeDirectory = "/home/godsmith";
   home.stateVersion = "22.11";
   home.packages = with pkgs; [
+    android-tools
+    appimage-run
     authy
     bandwhich # network usage
     bat-extras.batdiff # git diff
