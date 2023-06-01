@@ -85,7 +85,7 @@
   users.users.godsmith = {
     isNormalUser = true;
     description = "Godsmith";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "adbusers" "podman"];
     shell = pkgs.fish;
   };
 
@@ -107,6 +107,9 @@
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
   ];
+
+  # Installs Andriod tools and appropriate udev rules
+  programs.adb.enable = true;
 
   # Podman configuration
   virtualisation = {

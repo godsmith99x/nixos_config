@@ -14,7 +14,6 @@
   home.homeDirectory = "/home/godsmith";
   home.stateVersion = "22.11";
   home.packages = with pkgs; [
-    android-tools
     appimage-run
     authy
     bandwhich # network usage
@@ -32,9 +31,12 @@
     meld # graphical diff'ing tool
     neovim
     nerdfonts
+    openssl
     pipr # command builder
     podman-compose
     procs # process viewer
+    python310Full
+    python310Packages.pip
     rm-improved # rm replacement
     ripgrep
     rustup
