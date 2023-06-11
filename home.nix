@@ -6,6 +6,7 @@
     ./apps/atuin/atuin.nix # history search
     ./apps/bat/bat.nix
     ./apps/fish/fish.nix
+    ./apps/neovim/neovim.nix
     ./apps/starship/starship.nix # prompt
     ./apps/tmux/tmux.nix
   ];
@@ -30,7 +31,6 @@
     firefox
     git
     meld # graphical diff'ing tool
-    neovim
     nerdfonts
     openssl
     pipr # command builder
