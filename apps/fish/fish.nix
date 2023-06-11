@@ -7,7 +7,8 @@
       fish_add_path -p ~/.local/bin/
       set -U fish_greeting
       zoxide init fish | source
-      starship init fish | source";
+      starship init fish | source
+      any-nix-shell fish --info-right | source";
     shellAliases = {
       bg = "batgrep";
       bm = "batman";

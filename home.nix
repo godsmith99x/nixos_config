@@ -14,6 +14,7 @@
   home.homeDirectory = "/home/godsmith";
   home.stateVersion = "22.11";
   home.packages = with pkgs; [
+    any-nix-shell
     appimage-run
     authy
     bandwhich # network usage
@@ -39,7 +40,8 @@
     python310Packages.pip
     rm-improved # rm replacement
     ripgrep
-    rustup
+    # rustup
+    # trunk
     sd # find and replace
     vscode
     zoxide
