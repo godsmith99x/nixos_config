@@ -30,6 +30,7 @@
     fd # find replacement
     firefox
     git
+    libreoffice-fresh
     meld # graphical diff'ing tool
     nerdfonts
     openssl
