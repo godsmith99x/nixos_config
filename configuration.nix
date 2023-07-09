@@ -111,16 +111,17 @@
   # Installs Andriod tools and appropriate udev rules
   programs.adb.enable = true;
 
+  programs.fish.enable = true;
+
   # Podman configuration
   virtualisation = {
     podman = {
       enable = true;
 
-      # TODO: Enable in 23.05
-      # autoPrune = {
-      #   enable = true;
-      #   flags = [ "all" ];
-      # };
+      autoPrune = {
+        enable = true;
+        flags = [ "all" ];
+      };
 
       # Create a `docker` alias for podman, to use it as a drop-in replacement
       dockerCompat = true;
@@ -129,7 +130,7 @@
       dockerSocket.enable = true;
 
       # Required for containers under podman-compose to be able to talk to each other.
-      defaultNetwork.dnsname.enable = true;
+      defaultNetwork.settings.dnsname_enable = true;
     };
   };
 
@@ -152,12 +153,15 @@
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
+  system.autoUpgrade.enable = true;
+  system.autoUpgrade.channel = "https://channels.nixos.org/nixos-23.05";
+
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "22.11"; # Did you read the comment?
+  system.stateVersion = "23.05"; # Did you read the comment?
 
 }

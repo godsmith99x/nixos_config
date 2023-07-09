@@ -13,7 +13,7 @@
 
   home.username = "godsmith";
   home.homeDirectory = "/home/godsmith";
-  home.stateVersion = "22.11";
+  home.stateVersion = "23.05";
   home.packages = with pkgs; [
     any-nix-shell
     appimage-run
