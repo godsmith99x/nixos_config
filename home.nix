@@ -24,12 +24,15 @@
     bat-extras.batman # manual
     bottom # system monitor
     brave
+    cargo
     delta # terminal diff'ing tool
     dua # disk usage
     exa # ls replacement
     fd # find replacement
     firefox
     git
+    kubectl
+    kubernetes-helm
     libreoffice-fresh
     meld # graphical diff'ing tool
     nerdfonts
